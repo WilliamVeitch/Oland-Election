@@ -25,8 +25,8 @@ provinces = [
 { 'name':"Airovsky",                              'PGreen': 34, 'PRed': 59, 'PThird': 5, 'value': 9},
 { 'name':"Ceolynia",                              'PGreen': 40, 'PRed': 59, 'PThird': 1, 'value': 16},
 { 'name':"North Utnania",                  'PGreen': 5, 'PRed': 94, 'PThird': 1, 'value': 46},
-{ 'name':"New Sackny",                       'PGreen': 96, 'PRed': 3, 'PThird': 1, 'value': 40},
-{ 'name':"South Utnania",                   'PGreen': 1, 'PRed': 98, 'PThird': 1, 'value': 10},
+{ 'name':"New Sackny",                       'PGreen': 96, 'PRed': 3, 'PThird': 1, 'value': 10},
+{ 'name':"South Utnania",                   'PGreen': 1, 'PRed': 98, 'PThird': 1, 'value': 40},
 { 'name':"Inner Oretian Islands",        'PGreen': 98, 'PRed': 1, 'PThird': 1, 'value': 2}
 ]
 greentotal = 0
