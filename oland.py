@@ -20,7 +20,7 @@ provinces = [
 { 'name':"Oogan",                                  'PGreen': 2, 'PRed': 97, 'PThird': 1, 'value': 13},
 { 'name':"Uramoria",                             'PGreen': 5, 'PRed': 94, 'PThird': 1, 'value': 9},
 { 'name':"Mountain",                            'PGreen': 60, 'PRed': 35, 'PThird': 5, 'value': 7},
-{ 'name':"Aquotitl",                               'PGreen': 2, 'PRed': 60, 'PThird': 38, 'value': 3},
+{ 'name':"Aquotitl",                               'PGreen': 2, 'PRed': 60, 'PThird': 38, 'value': 4},
 { 'name':"Penonpore",                         'PGreen': 43, 'PRed': 49, 'PThird': 8, 'value': 17},
 { 'name':"Airovsky",                              'PGreen': 34, 'PRed': 59, 'PThird': 5, 'value': 9},
 { 'name':"Ceolynia",                              'PGreen': 40, 'PRed': 59, 'PThird': 1, 'value': 16},
