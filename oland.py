@@ -1,6 +1,7 @@
 #!/usr/nbin/python3
 import random
 print("Oland election")
+thirdlist = list()
 
 provinces = [
   { 'name':"Amelitical North Oland",  'PGreen': 98,  'PRed': 1, 'PThird': 1,  'value': 8},
@@ -48,8 +49,14 @@ for i in range(len(provinces)):
         redtotal = redtotal + selected['value']
         print("LOP Wins!")
     elif result == "N":
+        nlist = list()
         thirdtotal = thirdtotal +selected['value']
         print("NDP Wins!")
+        nlist.append(selected['PGreen'])
+        nlist.append(selected['PRed'])
+        nlist.append(selected['value'])
+        nlist.append(selected['name'])
+        thirdlist.append(nlist)
     print("ATP ", greentotal, "   LOP ", redtotal, "   NDP ", thirdtotal)
     while selected in provinces:
         if provinces[x] == selected:
@@ -59,11 +66,33 @@ for i in range(len(provinces)):
     if nexto == "no":
         break
 print("ATP ", greentotal, "   LOP ", redtotal, "   NDP ", thirdtotal)
-if greentotal > 202:
+if greentotal > 206:
     print("ATP wins the election")
-elif redtotal > 202:
+elif redtotal > 206:
     print("LOP wins the election")
-elif thirdtotal > 202:
+elif thirdtotal > 206:
     print("NDP wins the election")
 else:
     print("second round needed")
+    thirdtotal = 0
+    for i in range(len(thirdlist)):
+        print((thirdlist[i])[3])
+        problist = list()
+        problist.extend("A" * int((thirdlist[i])[0]))
+        problist.extend("A" * int((thirdlist[i])[1]))
+        result = random.choice(problist)
+        if result == "A":
+            greentotal = greentotal + selected['value']
+            print("ATP Wins!")
+        elif result == "L":
+            redtotal = redtotal + selected['value']
+            print("LOP Wins!")
+        print("ATP ", greentotal, "   LOP ", redtotal, "   NDP ", thirdtotal)
+        nexto = str(input("continue?   "))
+        if nexto == "no":
+            break
+    print("ATP ", greentotal, "   LOP ", redtotal, "   NDP ", thirdtotal)
+    if greentotal >206:
+        print("ATP wins the election")
+    elif redtotal > 206:
+        print("LOP wins the election")
