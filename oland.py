@@ -82,10 +82,10 @@ else:
         problist.extend("A" * int((thirdlist[i])[1]))
         result = random.choice(problist)
         if result == "A":
-            greentotal = greentotal + selected['value']
+            greentotal = greentotal + (thirdlist[i])[2]
             print("ATP Wins!")
         elif result == "L":
-            redtotal = redtotal + selected['value']
+            redtotal = redtotal + (thirdlist[i])[2]
             print("LOP Wins!")
         print("ATP ", greentotal, "   LOP ", redtotal, "   NDP ", thirdtotal)
         nexto = str(input("continue?   "))
